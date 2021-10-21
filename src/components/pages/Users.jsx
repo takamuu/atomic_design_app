@@ -17,13 +17,14 @@ const users = [...Array(10).keys()].map(((val) => {
 }))
 
 export const Users = () => {
+
   return (
     <SContainer>
       <h2>ユーザー一覧</h2>
       <SearchInput />
       <SUserArea>
-      {users.map((user) => (
-        <UserCard key={user.id} user={user} />
+      {users.map((obj) => (
+        <UserCard key={obj.id} user={obj} />
       ))}
       </SUserArea>
     </SContainer>
