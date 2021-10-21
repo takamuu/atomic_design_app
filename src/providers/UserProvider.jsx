@@ -11,5 +11,5 @@ export const UserProvider = (props) => {
     <UserContext.Provider value={{ userInfo, setUserInfo }}>
       {children}
     </UserContext.Provider>
-  )
-}
+  );
+};
